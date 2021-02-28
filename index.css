@@ -5,9 +5,9 @@ body {
 #container {
     width: 290px;
     height: 550px;
-    position: relative;
-    top: 70px;
-    left: 600px;
+    margin: auto;
+    margin-top: 70px;
+    justify-content: center;
     background: linear-gradient(to top, #000000, #434343);
     border-radius: 20px;
     box-shadow: -3px -3px 10px rgba(255, 255, 255, .05), 3px 3px 15px rgba(0, 0, 0, .5);
