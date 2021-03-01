@@ -1,3 +1,4 @@
+//THEME CODE-- START
 var color = 1;
 $('.btn-theme').click(function() {
     if (color === 1) {
@@ -15,6 +16,7 @@ $('.btn-theme').click(function() {
         $('body').css("background", "#f5f6f7");
         $('#container').css("box-shadow", "-4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA");
         $('side-section').css("background", "#f5f6f7");
+        $('.operator,.number,side-section,middle-section').css("box-shadow", "-4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA");
         color = 0;
     } else {
         $('#container').css("background", "linear-gradient(to top, #000000, #434343)");
@@ -30,6 +32,17 @@ $('.btn-theme').click(function() {
         $('.number').css("background-color", "#101115");
         $('body').css("background", "#131419");
         $('#container').css("box-shadow", "-3px -3px 10px rgba(255, 255, 255, .05), 3px 3px 15px rgba(0, 0, 0, .5)");
+        $('.operator,.number,side-section,middle-section').css("box-shadow", "-3px -3px 10px rgba(255, 255, 255, .05), 3px 3px 15px rgba(0, 0, 0, .5)");
         color = 1;
     }
+});
+
+//THEME CODE -- END
+
+
+$('.number,.divide, .multiplication, .plus,.minus,.equal,.modulo').click(function() {
+    $('.lowerValue').append(this.innerHTML);
+});
+$('#clear').click(function() {
+    $('.lowerValue,.upperValue').empty();;
 });
