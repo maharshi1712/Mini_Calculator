@@ -15,7 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -29,10 +28,10 @@
         </div>
         <div class="results">
             <div class="input">
-                <p class="upperValue">1+2+3</p>
+                <p class="upperValue"></p>
             </div>
             <div class="output">
-                <p class="lowerValue">1</p>
+                <p class="lowerValue"></p>
             </div>
         </div>
         <div class="group">
@@ -41,7 +40,7 @@
                 <button class="operator" id="backspace">
                     <i class="fas fa-backspace" aria-hidden="true"></i>
                 </button>
-                <button class="operator" id="modulo">%</button>
+                <button class="operator modulo" id="modulo">%</button>
             </div>
             <div class="middle-section">
                 <div>
@@ -67,10 +66,10 @@
             </div>
             <div class="side-section">
 
-                <button class="operator" id="/">/</button>
-                <button class="operator" id="*">x</button>
-                <button class="operator" id="-">-</button>
-                <button class="operator" id="+">+</button>
+                <button class="operator divide" id="/">/</button>
+                <button class="operator multiplication" id="*">x</button>
+                <button class="operator minus" id="-">-</button>
+                <button class="operator plus" id="+">+</button>
                 <button class="operator equal" id="=" style="background-color: #FF6A00;color: white;">=</button>
 
             </div>
